@@ -1,0 +1,17 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.public{
+    background-color: gainsboro;
+    padding: 10px;
+    margin-bottom: 20px;
+    width:80%;
+}
+
+.protected{
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-bottom: 20px;
+    width:80%;
+}
