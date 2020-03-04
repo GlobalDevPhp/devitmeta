@@ -178,10 +178,6 @@ class Devitmeta {
         $this->loader->add_action( 'user_register', $plugin_admin,'new_fields_update' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
-        /*if (is_admin())
-            $this->loader->add_filter( 'upload_mimes', $plugin_admin, 'enable_extended_upload');
-        */
-
 	}
 
 	/**
@@ -205,20 +201,7 @@ class Devitmeta {
 	 */
 	public function run() {
 		$this->loader->run();
-
-		if ($_SERVER['REQUEST_METHOD'] == "POST")
-		    $this->postProcess();
 	}
-
-	public function postProcess(){
-	    /*if (is_admin() && isset($_POST['action']) && $_POST['action'] == "import" && wp_verify_nonce( $_POST['fileup_nonce'], 'my_file_upload' )) {
-            $this->import();
-        }*/
-    }
-    public function import(){
-	    //$obj = new YKImportWooImport();
-	    //$obj->import();
-    }
 
 	/**
 	 * The name of the plugin used to uniquely identify it within the context of

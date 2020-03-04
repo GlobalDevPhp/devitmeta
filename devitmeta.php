@@ -62,7 +62,5 @@ function run_devitmeta() {
     $plugin->run();
 
 }
-//run_ykimportwoo();
-
 add_action('init','run_devitmeta');
 ?>
