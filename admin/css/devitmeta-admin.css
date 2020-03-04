@@ -1,0 +1,18 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.error-box{
+    color: #c74545;
+    font-size: 14px;
+    display:none;
+    padding-top: 3px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.ielement.error {
+    border: 1px solid #c74545;
+}
+.ielement.not_error {
+    border: 1px solid #5ca265;
+}
