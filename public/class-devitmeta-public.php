@@ -116,7 +116,7 @@ class Devitmeta_Public {
     // Замена шорткода [devit_users]
     public function devit_users_list(){
         $templates_var = array();
-        $user_num_by_page = 10;
+        $user_num_by_page = 5;
         $offset = 0;
 
         global $paged;
